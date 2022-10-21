@@ -3,27 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'Outfit': ['"Outfit"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { font-size: 11px; text-align: center; color: white;}
+    .attribution a { color: hsl(196, 74%, 63%); }
   </style>
 </head>
-<body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
+<body class="bg-[#0d192b] w-full h-screen flex flex-col pb-5">
+  <main class="bg-[#14253d] w-[300px] m-auto p-5 rounded-xl">
+    <img class="rounded-lg mb-5" src="./images/image-equilibrium.jpg" alt="Equilibrium #3429">
+    <h1 class="text-white font-Outfit font-semibold text-2xl mb-3">Equilibrium #3429</h1>
   
-  Creation of Jules Wyvern
+    <p class="text-white font-Outfit font-light">Our Equilibrium collection promotes balance and calm.</p>
+  
+    0.041 ETH
+    3 days left
+    
+    Creation of Jules Wyvern
+  </main>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
