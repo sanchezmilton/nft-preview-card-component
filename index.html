@@ -29,20 +29,30 @@
 </head>
 <body class="bg-[#0d192b] w-full h-screen flex flex-col pb-5">
   <main class="bg-[#14253d] w-[300px] m-auto p-5 rounded-xl">
-    <img class="rounded-lg mb-5" src="./images/image-equilibrium.jpg" alt="Equilibrium #3429">
-    <h1 class="text-white font-Outfit font-semibold text-2xl mb-3">Equilibrium #3429</h1>
+    <div class="relative">
+      <a href="#">
+        <img class="mb-5 rounded-lg" src="./images/image-equilibrium.jpg" alt="Equilibrium #3429">
+        <img class="absolute inset-0 p-[106px] m-auto opacity-0 hover:opacity-100 bg-[#00fff7] bg-opacity-50 rounded-lg" src="images/icon-view.svg" alt="">
+      </a>
+    </div>
+    <h1 class="mb-3 text-xl font-semibold text-white font-Outfit""><a class="hover:text-[#00fff7]" href="#">Equilibrium #3429</a></h1>
   
-    <p class="text-white font-Outfit font-light">Our Equilibrium collection promotes balance and calm.</p>
+    <p class="text-[#8bacda] font-Outfit font-light mb-3">Our Equilibrium collection promotes balance and calm.</p>
   
-    0.041 ETH
-    3 days left
-    
-    Creation of Jules Wyvern
+    <div class="flex justify-between mb-3">
+      <div class="text-[#00fff7] font-Outfit font-semibold flex items-center gap-1"><img class="h-4" src="images/icon-ethereum.svg" alt=""> 0.041 ETH</div>
+      <div class="text-[#8bacda] font-Outfit flex items-center gap-1"> <img class="h-4" src="./images/icon-clock.svg" alt=""> 3 days left</div>
+    </div>
+    <hr class="border-[#8bacda] mb-4 opacity-50">
+    <div class="flex items-center gap-4">
+      <img class="border-[1px] border-white rounded-full h-8" src="images/image-avatar.png" alt="">
+      <div class="text-[#8bacda] font-Outfit">Creation of <a class="hover:text-[#00fff7] text-white" href="#">Jules Wyvern</a></div>
+    </div>
   </main>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/sanchezmilton">Milton Sánchez</a>
   </div>
 </body>
 </html>
